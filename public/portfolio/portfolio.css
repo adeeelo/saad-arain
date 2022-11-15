@@ -1,0 +1,153 @@
+*{
+  scroll-behavior: smooth;
+}
+.gal {
+    display: block;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+.gal li {
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    transition: width 0.15s;
+    width: 100%;
+}
+@media (min-width: 375px) {
+    .gal li {
+        width: 90%;
+        height: auto;
+        margin: 5%;
+   }
+}
+@media (min-width: 625px) {
+    .gal li {
+        width: 33.3333333333%;
+   }
+}
+@media (min-width: 875px) {
+    .gal li {
+        width: 90%;
+   }
+}
+@media (min-width: 1125px) {
+    .gal li {
+        width: 20%;
+   }
+}
+@media (min-width: 1375px) {
+    .gal li {
+        width: 16.6666666667%;
+   }
+}
+@media (min-width: 1625px) {
+    .gal li {
+        width: 14.2857142857%;
+   }
+}
+@media (min-width: 1875px) {
+    .gal li {
+        width: 12.5%;
+   }
+}
+@media (min-width: 2125px) {
+    .gal li {
+        width: 11.1111111111%;
+   }
+}
+@media (min-width: 2375px) {
+    .gal li {
+        width: 10%;
+   }
+}
+.gal img {
+    vertical-align: top;
+    width: 100%;
+}
+html:before {
+    content: 250px  250px;
+    display: block;
+    position: fixed;
+    width: 250px;
+    height: 250px;
+    background: rgba(0, 0, 255, .4);
+    border: 1px solid green;
+    background: repeating-linear-gradient(45deg, rgba(64, 64, 64, .6), rgba(64, 64, 64, .6) 10px, rgba(38, 38, 38, .6) 10px, rgba(38, 38, 38, .6) 20px);
+    line-height: 250px;
+    text-align: center;
+    font-family: "lucida console", monospace;
+    font-weight: bold;
+    font-size: 26.6666666667px;
+    color: white;
+    top: 0;
+    right: 0;
+    z-index: 10;
+}
+
+
+/* portfolioo heading styling here  */
+.disappear {
+    /* position: absolute; */
+    
+  font-size:4vw;
+    
+   
+  }
+  .disappear span {
+    display: inline-block;
+    color:transparent;
+    text-shadow: 0px 0px 0px black;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+  }
+  .disappear span:nth-child(1){
+    animation-name: disappearleft;
+  }
+  .disappear span:nth-child(2){
+    animation-name: disappearleft;
+    animation-delay: .3s;
+  }
+  .disappear span:nth-child(3){
+    animation-name: disappearight;
+    animation-delay: .6s;
+  }
+  .disappear span:nth-child(4){
+    animation-name: disappearleft;
+    animation-delay: .8s;
+  }
+  .disappear span:nth-child(5){
+    animation-name: disappearight;
+    animation-delay: 1s;
+  }
+  .disappear span:nth-child(6){
+    animation-name: disappearight;
+    animation-delay: 1.3s;
+  }
+  .disappear span:nth-child(7){
+    animation-name: disappearleft;
+    animation-delay: 1.6s;
+  }
+  .disappear span:nth-child(8){
+    animation-name: disappearight;
+    animation-delay: 2s;
+  }
+  .disappear span:nth-child(9){
+    animation-name: disappearight;
+    animation-delay: 2.3s;
+  }
+  @keyframes disappearleft{
+    50% {transform: skew(50deg) translateY(-200%);
+        text-shadow: 0px 0px 50px;
+          opacity: 0;
+    }
+  }
+  @keyframes disappearight{
+    50% {transform: skew(-50deg) translateY(-200%);
+        text-shadow: 0px 0px 50px;
+          opacity: 0;
+    }
+  }
+
+
+
